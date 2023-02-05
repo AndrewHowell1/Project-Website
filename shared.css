@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #20264e;
+  --secondary-color: #3593ff;
+  --heading-font-size: 32px;
+  --heading-font-family: "Rubik", sans-serif;
+  --heading-font-color: #20264e;
+  --heading-font-weight: 600;
+  --heading-font: var(--heading-font-size) var(--heading-font-family);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: rgb(158, 158, 158);
+}
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  width: 100%;
+  overflow: overlay;
+  background: #f2f2f2;
+}
+.button {
+  background: #154377;
+  color: #ffffff;
+  font: inherit;
+  border: 1.5px solid #154377;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+}
+.button:hover,
+button:active {
+  background: #ffffff;
+  color: #154377;
+  transform: scale(1.1);
+}
+.button:focus {
+  outline: none;
+}
+.main-header {
+  background: var(--primary-color);
+  padding: 8px 16px;
+  width: 100%;
+}
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+.main-header__brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+}
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 100px);
+  vertical-align: middle;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+}
+.main-nav__item {
+  display: inline-block;
+  margin: 0px 16px;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  border-bottom: 2px solid white;
+}
+.main-nav__item--cta a {
+  color: white;
+  background: var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: var(--secondary-color);
+  background: white;
+  border: none;
+}
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+.main-footer__link a:hover,
+.main-footer__link a:hover {
+  color: #ccc;
+}
